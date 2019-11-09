@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2> Pokémons </h2>
+
+    <a href="/new" class="btn btn-primary">Ajouter un Pokémon</a>
+
+    {% for p in pokemons %}
+        <div class="card" style="width: 18rem;">
+            <img src="./../../uploads/{{p.picture}}" class="card-img-top" alt="{{p.name}}">
+            <div class="card-body">
+                <h5 class="card-title">{{p.name}}</h5>
+                <p class="card-text">{{p.description}}</p>
+                <a href="/{{p._id}}" class="btn btn-primary">Détail</a>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}

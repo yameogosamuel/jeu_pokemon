@@ -1,0 +1,22 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "downloadModules": "npm i --s express mongoose nunjucks bootstrap body-parser multer nodemon",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.8",
+    "multer": "^1.4.2",
+    "nodemon": "^1.19.4",
+    "nunjucks": "^3.2.0"
+  }
+}
